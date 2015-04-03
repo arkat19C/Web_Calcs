@@ -1,0 +1,29 @@
+<br> <br> <br>
+<br>
+<div class="lead" id="intro_message">Welcome to the Quadratic Root Solver! Put in an A, B, and C value (respective to the quadratic function) and find its roots!<br> If the function has no roots or non-integers are inputted, the program will output 'NaN'. <br> Have fun!</div>
+<img src="files/quadF.jpg" class="image" width="498" height="84">
+<br>
+<div>
+  <br>
+  <form class="form-inline" method="get" action="/quadratic.erb">
+    <div class="form-group lead">
+      <label for="quadA">A Term:</label>
+      <input type="number" class="form-control" id="quadA" placeholder="'A' Term">
+    </div>
+    <br> <br>
+    <div class="form-group lead">
+      <label for="quadB">B Term:</label>
+      <input type="number" class="form-control" id="quadB" placeholder="'B' Term">
+    </div>
+    <br> <br>
+    <div class="form-group lead">
+      <label for="quadC">C Term:</label>
+      <input type="number" class="form-control" id="quadC" placeholder="'C' Term">
+    </div>
+    <br> <br>
+    <button type="submit" class="btn btn-success btn-block" id="quadSolve">Solve</button>
+  </form>
+</div>
+<br> <br>
+<div class="lead">The roots of this quadratic equation are: </div>
+<div id="quadRoots" class="lead"></div>

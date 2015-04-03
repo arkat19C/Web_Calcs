@@ -1,0 +1,23 @@
+#top_line {
+    height: 0.1pt;
+    visibility: hidden;
+    margin-bottom: -10px;
+}
+
+body {
+    background-color: darkcyan !important;
+}
+
+#intro_message {
+    text-align: center;
+}
+
+.image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+h1 {
+    font-size: 50px !important;
+}

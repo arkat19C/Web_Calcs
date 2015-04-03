@@ -1,0 +1,27 @@
+<br> <br> <br>
+<br>
+<div class="lead" id="intro_message">Welcome the Pythagorean Theorem Solver! This program solves for the third side length of a right triangle! <br> Fill in two of the forms and the third will pop up at the bottom! <br> Have fun! (NaN means not a number)</div>
+<div>
+  <img src="/files/triangleC.png" class="image" height="268.75" width="348.75">
+  <br> <br>
+  <form class="form-inline" method="get" action="/pythag.erb">
+    <div class="form-group lead">
+      <label for="pythagA">A Term:</label>
+      <input type="number" class="form-control" id="pythagA" placeholder="'A' Term">
+    </div>
+    <br> <br>
+    <div class="form-group lead">
+      <label for="pythagB">B Term:</label>
+      <input type="number" class="form-control" id="pythagB" placeholder="'B' Term">
+    </div>
+    <br> <br>
+    <div class="form-group lead">
+      <label for="pythagC">C Term:</label>
+      <input type="number" class="form-control" id="pythagC" placeholder="'C' Term">
+    </div>
+    <br> <br>
+    <button type="submit" class="btn btn-success btn-block" id="pythagSolve">Solve</button>
+  </form>
+</div>
+<br>
+<div class="lead">The length of the third side is: <div id="pythagAnswer" class="lead"></div> units long.</div>

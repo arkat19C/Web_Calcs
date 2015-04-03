@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+    <html lang="en">
+
+        <head>
+
+            <title>Web Calculators</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+            <link rel="stylesheet" href="/css/app.css?<%= rand(100000) %>">
+
+          <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+          <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+        </head>
+
+        <body>
+
+        <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+            <hr id="top_line">
+            <div class="container">
+              <ul class="nav nav-pills">
+                <li role="presentation" id="home_page" class="nav-x"><a href="index.erb">Home</a></li>
+                <li role="presentation" id="quad_page" class="nav-x"><a href="quadratic.erb">Quadratic</a></li>
+                <li role="presentation" id="fact_page" class="nav-x"><a href="factorial.erb">Factorial</a></li>
+                <li role="presentation" id="pythag_page" class="nav-x"><a href="pythag.erb">Pythagorean</a></li>
+              </ul>
+            </div>
+          <hr id="top_line">
+        </nav>
+
+        <div class="container">
+          <%= yield %>
+        </div>
+
+        <script src="/js/app.js?<%= rand(100000) %>"></script>
+
+        </body>
+
+    </html>
